@@ -32,7 +32,7 @@ li:last-child {
 .leftpane {
     display: flex;
     width: 25vw;
-    height: 100vh;
+    height: 5vh;
     float: left;
     color: #834120;
     font-size:60vw;
@@ -44,7 +44,7 @@ li:last-child {
 .middlepane {
     display: flex;
     width: 50vw;
-    height: 100vh;
+    height: 90vh;
     float: left;
     background-color: #282B28;
     border-collapse: collapse;
@@ -54,7 +54,7 @@ li:last-child {
 .rightpane {
   display: flex;
   width: 25vw;
-  height: 100vh;
+  height: 5vh;
   float: right;
   color: #834120;
   text-align:center;
