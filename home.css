@@ -1,4 +1,7 @@
 ul {
+    padding-top:45vh;
+    padding-left:15vw;
+    position:fixed;
   display: inline-grid;
   grid-auto-flow: row;
   grid-gap: 24px;
@@ -62,3 +65,7 @@ li:last-child {
   background-color: #282B28;
   border-collapse: collapse;
 }
+
+
+
+
