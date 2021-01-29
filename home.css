@@ -31,7 +31,7 @@ li:last-child {
 
 .leftpane {
     display: flex;
-    width: 25%;
+    width: 25vw;
     height: 100vh;
     float: left;
     color: #834120;
@@ -43,7 +43,7 @@ li:last-child {
 
 .middlepane {
     display: flex;
-    width: 50%;
+    width: 50vw;
     height: 100vh;
     float: left;
     background-color: #282B28;
@@ -53,13 +53,12 @@ li:last-child {
 
 .rightpane {
   display: flex;
-  width: 25%;
+  width: 25vw;
   height: 100vh;
+  float: right;
   color: #834120;
   text-align:center;
   font-size:25vw;
-  position: relative;
-  float: right;
   background-color: #282B28;
   border-collapse: collapse;
 }
