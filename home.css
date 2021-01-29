@@ -35,7 +35,7 @@ li:last-child {
     height: 100vh;
     float: left;
     color: #834120;
-    font-size:25vw;
+    font-size:60vw;
     text-align:center;
     background-color: #282B28;
     border-collapse: collapse;
@@ -58,7 +58,7 @@ li:last-child {
   float: right;
   color: #834120;
   text-align:center;
-  font-size:25vw;
+  font-size:60vw;
   background-color: #282B28;
   border-collapse: collapse;
 }
