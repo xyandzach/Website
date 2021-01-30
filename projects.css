@@ -1,11 +1,28 @@
-h1 {
+ h1 {
     background-color: #282B28;
     font-size:75px;
     color:#834120;
     position:fixed;
 }
 
+p {
+   padding:75px;
+   width:25%;
+   font-size:20px;
+}
+
 div {
     background-color: #282B28;
     font-family: Menlo, monospace;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
