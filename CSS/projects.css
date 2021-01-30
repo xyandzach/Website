@@ -1,7 +1,13 @@
-
-
-p {
+.projectp {
    font-size:20px;
+   text-align:center;
+   padding-top:25px;
+   padding-bottom:25px;
+}
+
+img {
+   padding-top:25px;
+   padding-bottom:25px;
 }
 
 div {
