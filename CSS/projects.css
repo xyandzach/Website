@@ -1,4 +1,4 @@
-.projectp {
+ .projectp {
    font-size:20px;
    text-align:center;
    padding-top:25px;
@@ -35,7 +35,7 @@ div {
 
 .topbottom {
     background-color: #282B28;
-    font-size:75px;
+    font-size:40px;
     color:#834120;
     position:fixed;
 }
