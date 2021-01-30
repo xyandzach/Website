@@ -1,1 +1,11 @@
+div {
+    background-color: #282B28;
+    font-family: Menlo, monospace;
+}
 
+h1 {
+    background-color: #282B28;
+    font-size:75px;
+    color:#834120;
+    position:fixed;
+}
