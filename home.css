@@ -1,6 +1,6 @@
 ul {
   position:fixed;
-  right:40vw;
+  right:42vw;
   top:45vh;
   display: inline-grid;
   grid-auto-flow: row;
