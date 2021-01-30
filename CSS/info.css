@@ -3,9 +3,9 @@ div {
     font-family: Menlo, monospace;
 }
 
-p {
+.topbottom {
     background-color: #282B28;
-    font-size:75px;
+    font-size:40px;
     color:#834120;
     position:fixed;
 }
