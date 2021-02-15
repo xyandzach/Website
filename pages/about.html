@@ -15,6 +15,14 @@
 </head>
 
 <body style = "background-color: #282B28">
+    <img src = "https://raw.githubusercontent.com/xyandzach/Website/main/img/sideMenuButton.png" class = "menuButton" onclick="openNav()">&#9776;>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="pages/about.html">About</a>
+        <a href="pages/info.html">Info</a>
+    </div>
  
     <div style = "width:100%;height:60px;position:fixed;right:1vw;bottom:0vh">
         <p class = "topbottom" style = "left:3vw;top:-3vh">/*About</p>
@@ -24,6 +32,25 @@
         <p class = "topbottom" style = "left:3vw;bottom:0vh">*/</p>
     </div>
     
+    <script>
+        var menuOpen = false;
+        function openNav() {
+            if (menuOpen == true) {
+                document.getElementById("mySidenav").style.width = "0";
+                menuOpen = false;
+            }else{
+                document.getElementById("mySidenav").style.width = "250px";
+                menuOpen = true;
+            }
+            
+        }   
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            menuOpen = false;
+        }
+    </script>
+ 
 </body>
 
 </html>
