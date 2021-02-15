@@ -1,4 +1,4 @@
-.projectp {
+    .projectp {
    color:#D3D4D9;
    font-size:20px;
    text-align:center;
@@ -48,7 +48,46 @@ div {
     margin: 0;
     position: fixed;
     top: 50%;
-    left: 95%;
+    left: 92%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #D3D4D9;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #282B28;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #D3784A;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
