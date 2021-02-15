@@ -49,8 +49,6 @@ div {
     position: fixed;
     top: 50%;
     left: 92%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
 
 .sidenav {
@@ -90,4 +88,14 @@ div {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+img {
+
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
