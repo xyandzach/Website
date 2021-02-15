@@ -1,4 +1,4 @@
- .projectp {
+    .projectp {
    color:#D3D4D9;
    font-size:20px;
    text-align:center;
@@ -39,4 +39,16 @@ div {
     font-size:40px;
     color:#834120;
     position:fixed;
+}
+
+.menuButton {
+    width:60px;
+    height:50px;
+    float:right;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
