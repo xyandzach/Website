@@ -46,7 +46,7 @@ div {
     height:50px;
     float:right;
     margin: 0;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 95%;
     -ms-transform: translateY(-50%);
