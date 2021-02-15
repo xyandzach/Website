@@ -127,12 +127,21 @@
         <p class = "topbottom" style = "width:100%;left:3vw;bottom:0vh">}</p>
     </div>
     <script>
+        var menuOpen = false;
         function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
+            if (menuOpen == true) {
+                document.getElementById("mySidenav").style.width = "0";
+                menuOpen = false;
+            }else{
+                document.getElementById("mySidenav").style.width = "250px";
+                menuOpen = true;
+            }
+            
         }   
 
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
+            menuOpen = false;
         }
     </script>
 </body>
