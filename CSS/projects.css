@@ -18,7 +18,7 @@ div {
 
 .column {
   float: left;
-  width: 45%;
+  width: 50%;
 }
 
 .row:after {
