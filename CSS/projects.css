@@ -1,4 +1,4 @@
-    .projectp {
+.projectp {
    color:#D3D4D9;
    font-size:20px;
    text-align:center;
@@ -18,7 +18,7 @@ div {
 
 .column {
   float: left;
-  width: 50%;
+  width: 45%;
 }
 
 .row:after {
@@ -48,7 +48,7 @@ div {
     margin: 0;
     position: absolute;
     top: 50%;
-    left: 100%;
+    left: 90%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
