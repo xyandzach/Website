@@ -11,56 +11,89 @@
 <meta name="theme-color" content="#ffffff">
 <title>Projects</title>
 <link rel = "stylesheet" type = "text/css" href = "/CSS/projects.css">
+<script src="/JS/projects.js"></script>
 
 </head>
 
-<body style = "background-color: #282B28">
-     
-    <img src = "https://raw.githubusercontent.com/xyandzach/Website/main/img/sideMenuButton.png" class = "menuButton" onclick="openNav()">
-    
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"</a>
+<body style="margin:0;background-color: #282B28">
+    <div class="header">
+        <h1>Projects {</h1>
+        <img id="menuButton" onclick="openMenu()" class="menu-button" src="resources/menu-button.png">
+    </div>
+
+    <div class="project-row" style="padding-top:1.25in">
+        <div class="project-description">
+            <h2 class="project-text">Pack-Age</h2>
+            <p class="project-description-text">Pack-Age is a user-oriented app created to ease 
+                the difficulty of keeping track of multiple packages through multiple carriers. Like 
+                most people today, I order a lot of items online. Whether it be through 
+                amazon, auction sites like eBay, or other individualistic online outlets, 
+                purchasing products online has seen a gigantic uptick in the past decade.
+                 Again, like most people I zoom to check where exactly my package is and 
+                 when I can expect it at my front door as soon as I receive a tracking 
+                 number for my order. The problem that I have run into, and I am sure 
+                 most others have as well, is that with so many different carriers and 
+                 tracking number formats it is hard to see and keep track of all your 
+                 package tracking information in one place. To solve this problem, I 
+                 developed Pack-Age, a multi-carrier tracking application that presents 
+                 user-friendly features for storing and managing many tracking numbers.</p>
+            <a class="project-text" style="color:#D3784A;padding-top: 10px;" href="https://github.com/xyandzach/Pack-Age">Github</a>
+        </div>
+
+        <div class="project-picture">
+            <img class="project-img" src="resources/Pack-Age-Logo.png">
+        </div>
+    </div>
+
+
+    <div class="project-row">
+        <div class="project-picture">
+            <img class="project-img" src="resources/Bingeables-Logo.png">
+        </div>
+
+        <div class="project-description">
+            <h2 class="project-text">Bingeables</h2>
+            <p class="project-description-text">Bingeables is a user-oriented website created to let 
+                gamers and movie goers keep track and record the video games and movies they have experienced. 
+                Websites users will be able to create a custom profile to keep track of the entertainment 
+                they have experienced. Once fully published, Bingeables will be able to maintain the details 
+                of the movies and games the user adds to their profile watchlist/gamelist. The main design 
+                of the site is to provide a record of the movies and games to the user. </p>
+            <a class="project-text" style="color:#D3784A;padding-top: 10px;" href="https://github.com/xyandzach/Bingeables">Github</a>
+        </div>
+    </div>
+
+
+    <div class="project-row" style="padding-top:1.25in">
+        <div class="project-description">
+            <h2 class="project-text">Simon in Java3D</h2>
+            <p class="project-description-text">Simon is a classic table top game that puts your memory
+                to the test by flashing a series of colors in a pattern that has to be repeated to further
+                the game. Each time the pattern is successfully repeated and addition color is added to the
+                end of the pattern to make the game more difficulty the longer it goes on. For one of my electives
+                in school I choose to take computer graphics. I was interested in the fundamental processes 
+                requried to render and display images of any kind on a screen. In class we learned these fundamentals
+                through the use of Java's Swing libraries for 2D rendering and Java3D for 3D rendering. Using the skills
+                I learned in this class I was able to develope a implementation of Simon using Java3D.
+            </p>
+            <a class="project-text" style="color:#D3784A;padding-top: 10px;" href="https://github.com/xyandzach/Simon-Java3D">Github</a>
+        </div>
+
+        <div class="project-picture">
+            <img class="project-img" src="resources/Simon-Logo.png">
+        </div>
+    </div>
+
+    <div class="footer">
+        <h1>}</h1>
+    </div>
+
+    <div id="navMenu" class="nav-menu">
         <a href="https://zachanderson.live/">//Home</a>
         <a href="https://zachanderson.live/pages/about">//About</a>
+        <a href="https://zachanderson.live/pages/projects">//About</a>
         <a href="https://zachanderson.live/pages/info">//Info</a>
     </div>
-    
-    <div style = "width:100%;height:65px;position:fixed;top:0vh;">
-        <p class = "topbottom" style = "top:-3vh;left:3vw">Projects(){</p>
-    </div> 
-    
-    <div>
-       <div class="row" style = "padding-top:30px;padding-bottom:70px">
-           
-            <div class="column" >
-            </div>
-  
-            <div class="column">
-            </div> 
-        
-       </div> 
-    </div>
-    
-    <div style = "width:100%;height:60px;position:fixed;right:1vw;bottom:0vh">
-        <p class = "topbottom" style = "width:100%;left:3vw;bottom:0vh">}</p>
-    </div>
-    <script>
-        var menuOpen = false;
-        function openNav() {
-            if (menuOpen == true) {
-                document.getElementById("mySidenav").style.width = "0";
-                menuOpen = false;
-            }else{
-                document.getElementById("mySidenav").style.width = "250px";
-                menuOpen = true;
-            }
-            
-        }   
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            menuOpen = false;
-        }
-    </script>
 </body>
+
 </html>
