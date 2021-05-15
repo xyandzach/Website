@@ -4,7 +4,7 @@ function openMenu() {
 
     if (sideMenu.style.display == "none") {
         sideMenu.style.display = "block";
-        menuButton.style.transform = "translate(-235px,0px)";
+        menuButton.style.transform = "translate(-215px,0px)";
     } else {
         sideMenu.style.display = "none";
         menuButton.style.transform = "translate(0px,0px)";
