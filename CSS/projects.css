@@ -12,7 +12,7 @@
 
 .menu-button {
     padding-top: 25px;
-    height: 30%;
+    height: 40%;
     margin-left: 88%;
 }
 
@@ -55,7 +55,7 @@
 
 .nav-menu {
     height: 96.3%;
-    width: 15%;
+    width: 10%;
     position: fixed;
     z-index: 1;
     top: 0;
