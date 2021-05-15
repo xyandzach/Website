@@ -47,6 +47,7 @@
     max-width: 49%;
     padding-left: 32px;
     overflow: auto;
+    cursor: pointer;
 }
 
 .project-img {
