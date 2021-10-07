@@ -3,7 +3,9 @@ function checkResize(body) {
     var staticgreeting = document.getElementsByClassName("static-greeting");
     var greeting = document.getElementById("greeting");
 
-    if (body.innerWidth != 1920) {
+    alert(body.innerWidth);
+    
+    if (body.innerWidth != 1920 || body.innerWidth != "undefined") {
         greeting.style.display = "none";
         for (var i=0;i<timelineTics.length;i++) {
             if(i < 2) {
