@@ -2,8 +2,8 @@ function checkResize(body) {
     var timelineTics = document.getElementsByClassName("timeline-spacer-block");
     var staticgreeting = document.getElementsByClassName("static-greeting");
     var greeting = document.getElementById("greeting");
-    
-    if (body.innerWidth == 1920 || body.innerWidth == undefined) {
+
+    if (body.clientWidth == 1903) {
         greeting.style.display = "block";
         for (var i=0;i<timelineTics.length;i++) {
             if(i < 2) {
@@ -11,7 +11,7 @@ function checkResize(body) {
             }
             timelineTics[i].style.display = "block";
         }
-    } else if (body.innerWidth != 1920) {
+    } else {
         greeting.style.display = "none";
         for (var i=0;i<timelineTics.length;i++) {
             if(i < 2) {
