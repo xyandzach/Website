@@ -1,26 +1,26 @@
-// function checkResize(body) {
-//     var timelineTics = document.getElementsByClassName("timeline-spacer-block");
+function checkResize(body) {
+    var timelineTics = document.getElementsByClassName("timeline-spacer-block");
 //     var staticgreeting = document.getElementsByClassName("static-greeting");
 //     var greeting = document.getElementById("greeting");
 
-//     if (body.innerWidth != 1920 || body.innerWidth != "undefined") {
+    if (body.innerWidth != 1920 || body.innerWidth != "undefined") {
 //         greeting.style.display = "none";
-//         for (var i=0;i<timelineTics.length;i++) {
+        for (var i=0;i<timelineTics.length;i++) {
 //             if(i < 2) {
 //                 staticgreeting[i].style.display = "block";
 //             }
-//             timelineTics[i].style.display = "none";
-//         }
-//     } else {
+            timelineTics[i].style.display = "none";
+        }
+    } else {
 //         greeting.style.display = "block";
-//         for (var i=0;i<timelineTics.length;i++) {
+        for (var i=0;i<timelineTics.length;i++) {
 //             if(i < 2) {
 //                 staticgreeting[i].style.display = "none";
 //             }
-//             timelineTics[i].style.display = "block";
-//         }
-//     }
-// }
+            timelineTics[i].style.display = "block";
+        }
+    }
+}
 
 function showTileOverlay(ev) {
     var index = ev.id;
