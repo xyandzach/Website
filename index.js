@@ -1,22 +1,22 @@
 function checkResize(body) {
     var timelineTics = document.getElementsByClassName("timeline-spacer-block");
-//     var staticgreeting = document.getElementsByClassName("static-greeting");
-//     var greeting = document.getElementById("greeting");
+    var staticgreeting = document.getElementsByClassName("static-greeting");
+    var greeting = document.getElementById("greeting");
 
     if (body.innerWidth != 1920 || body.innerWidth != "undefined") {
-//         greeting.style.display = "none";
+        greeting.style.display = "none";
         for (var i=0;i<timelineTics.length;i++) {
-//             if(i < 2) {
-//                 staticgreeting[i].style.display = "block";
-//             }
+            if(i < 2) {
+                staticgreeting[i].style.display = "block";
+            }
             timelineTics[i].style.display = "none";
         }
     } else {
-//         greeting.style.display = "block";
+        greeting.style.display = "block";
         for (var i=0;i<timelineTics.length;i++) {
-//             if(i < 2) {
-//                 staticgreeting[i].style.display = "none";
-//             }
+            if(i < 2) {
+                staticgreeting[i].style.display = "none";
+            }
             timelineTics[i].style.display = "block";
         }
     }
