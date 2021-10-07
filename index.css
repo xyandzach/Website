@@ -1,0 +1,347 @@
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    padding-top: 10pt;
+    height: 25pt;
+    background-color: #3B7080;
+}
+.nav-button {
+    text-decoration: none;
+    color: #070707;
+    padding: 10pt;
+    font-family: Rockwell;
+    font-size: 14pt;
+}
+.nav-button:hover {
+    font-size: 20pt;
+}
+.hi {
+    display: block;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 1;
+    font-family: Rockwell;
+    font-size: 420%;
+    top: -10%;
+    left: 5.5%;
+    animation-name: topAnim;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.my-name-is {
+    display: block;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 1;
+    font-family: Rockwell;
+    font-size: 420%;;
+    top: -20%;
+    left: 11.5%;
+    animation-name: topAnim;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.zach {
+    display: block;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 1;
+    font-family: Rockwell;
+    font-size: 600%;
+    top: 90%;
+    left: 11%;
+    animation-name: bottomAnim;
+    animation-delay: 1.5s;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.and-welcome-to-my {
+    display: block;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 1;
+    font-family: Rockwell;
+    font-size: 420%;;
+    top: -40%;
+    left: 62.5%;
+    animation-name: topAnim;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.website {
+    display: block;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 1;
+    font-family: Rockwell;
+    font-size: 600%;
+    top: 90%;
+    left: 67%;
+    animation-name: bottomAnim;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes topAnim {
+    0% {top: -10%}
+    100% {top: 10%}
+}
+@keyframes bottomAnim {
+    0% {top: 90%;}
+    100% {top: 15%;}
+}
+.intro-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #3B7080;
+    padding-top: 30px;
+}
+.static-greeting {
+    font-family: Rockwell;
+    font-size: 1000%;
+    display: none;
+}
+.about-bar {
+    display: flex;
+    z-index: 2;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 130px;
+    padding-bottom: 90px;
+}
+.about-tile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 4px dashed #3B7080;
+    padding: 6px;
+}
+.tile-overlay {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    opacity: 0.9;
+    background-color: rgb(59, 112, 128);
+}
+.overlay-text {
+    text-align: center;
+    padding-top: 50px;
+    font-family: Rockwell;
+    color: #D8E2DC;
+}
+.tile-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 100px;
+    width: 100px;
+}
+.scroll {
+    text-align: center;
+    height: 100px;
+    padding-top: 40px;
+}
+.amano-quote {
+    text-decoration: none;
+    color: #070707;
+    font-family: Rockwell;
+    font-size: 25pt;
+}
+.amano-quote:hover {
+    font-size: 35pt;
+}
+.highlight-projects {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #3B7080;
+}
+.project {
+    color: #070707;
+    font-family: Rockwell;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+}
+.project-image {
+    background: rgba(216, 226, 220, 0.5);
+    height: 450px;
+    width: 750px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 35px;
+}
+.project-image:hover {
+    animation-name: paddingPulse;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes paddingPulse {
+    0% {padding: 35px; border-radius: 0ch;}
+    25% {padding: 30px; border-radius: 1ch;}
+    50% {padding: 35px; border-radius: 0ch;}
+    75% {padding: 30px; border-radius: 1ch;}
+    100% {padding: 35px; border-radius: 0ch;}
+}
+.swimming-fish {
+    position: relative;
+    float:left;
+    height: 100px;
+    width: 175px;
+    animation-name: swimming;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes swimming {
+    0% {transform: translateX(0vw);}
+    49% {transform: translateX(90vw);}
+    51% {transform: translateX(90vw) scaleX(-1);}
+    97% {transform: translateX(0vw) scaleX(-1);}
+    100% {transform: translateX(0vw) scaleX(1);}
+}
+.fish-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 70px;
+}
+.fish {
+    height: 200px;
+    width: 300px;
+    padding: 100px;
+    animation-duration: 1s;
+    animation-name: fishdance;
+    animation-iteration-count: infinite;
+}
+@keyframes fishdance {
+    0% {transform: rotate(-5deg);}
+    50% {transform: rotate(5deg);}
+    100% {transform: rotate(-5deg);}
+}
+.fish-description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15pt;
+    padding: 20px;
+}
+.timeline {
+    background-color: #D8E2DC;
+}
+.timeline-top {
+    display: flex;
+    flex-direction: row;
+    height: 350px;
+    background-color: #3B7080;
+}
+.timeline-line {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+}
+.timeline-shaper-block {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+}
+.shaper-block-topbottom {
+    height: 30px;
+    background-color: #3B7080;
+}
+.shaper-block-middle {
+    height: 10px;
+    background-color: #D8E2DC;
+}
+.timeline-spacer-block {
+    height: 25px;
+    background-color: #3B7080;
+    width: 10px;
+}
+.timeline-entry {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    max-width: 300px;
+    padding-top: 10%;
+    padding: 0.6%;
+}
+.timeline-text {
+    font-family: Rockwell;
+    color: #070707;
+    text-align: center;
+}
+.timeline-img {
+    height: 60%;
+    width: 65%;
+}
+.timeline-bottom {
+    display: flex;
+    flex-direction: row;
+    height: 350px;
+    background-color: #3B7080;
+}
+.timeline-popup {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    height: auto;
+    width: 350px;
+    background-color: #D8E2DC;
+    border-top-right-radius: 1ch;
+    border-bottom-left-radius: 1ch;
+    border-bottom-right-radius: 1ch;
+    border: #070707 1px dashed;
+}
+.timeline-popup-title{
+    color: #070707;
+    text-align: center;
+    text-decoration: underline;
+}
+.timeline-popup-description {
+    padding: 15px;
+    color: #070707;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #D8E2DC;
+    background: rgba(85, 89, 86, 0.75);
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 250px;
+}
+.footer-link {
+    text-decoration: none;
+    color: #070707;
+    padding: 10pt;
+    font-family: Rockwell;
+    font-size: 14pt;
+}
+.footer-link:hover {
+    text-decoration: underline;
+}
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
