@@ -2,8 +2,6 @@ function checkResize(body) {
     var timelineTics = document.getElementsByClassName("timeline-spacer-block");
     var staticgreeting = document.getElementsByClassName("static-greeting");
     var greeting = document.getElementById("greeting");
-
-    alert(body.innerWidth);
     
     if (body.innerWidth != 1920 || body.innerWidth != "undefined") {
         greeting.style.display = "none";
