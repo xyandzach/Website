@@ -107,8 +107,9 @@
 }
 .static-greeting {
     font-family: Rockwell;
-    font-size: xx-large;
+    font-size: 750%;
     display: none;
+    padding-top: 2%;
 }
 .about-bar {
     display: flex;
