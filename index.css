@@ -16,29 +16,35 @@
 .nav-button:hover {
     font-size: 20pt;
 }
+.intro-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #3B7080;
+    padding-top: 30px;
+}
+.greeting-column {
+    display: flex;
+    flex-direction: column;
+}
 .hi {
-    display: block;
     position: absolute;
-    white-space: nowrap;
-    z-index: 1;
     font-family: Rockwell;
-    font-size: 420%;
-    top: -10%;
-    left: 5.5%;
+    font-size: 50pt;
+    top: -50%;
+    left: 9%;
     animation-name: topAnim;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 .my-name-is {
-    display: block;
     position: absolute;
-    white-space: nowrap;
-    z-index: 1;
     font-family: Rockwell;
-    font-size: 420%;;
-    top: -20%;
-    left: 11.5%;
+    font-size: 50pt;
+    top: -50%;
+    left: 12%;
+    padding-left: 3%;
     animation-name: topAnim;
     animation-delay: 0.5s;
     animation-duration: 1s;
@@ -46,14 +52,11 @@
     animation-fill-mode: forwards;
 }
 .zach {
-    display: block;
     position: absolute;
-    white-space: nowrap;
-    z-index: 1;
     font-family: Rockwell;
-    font-size: 600%;
-    top: 90%;
-    left: 11%;
+    font-size: 50pt;
+    top: 150%;
+    left: 16%;
     animation-name: bottomAnim;
     animation-delay: 1.5s;
     animation-duration: 0.5s;
@@ -61,14 +64,11 @@
     animation-fill-mode: forwards;
 }
 .and-welcome-to-my {
-    display: block;
     position: absolute;
-    white-space: nowrap;
-    z-index: 1;
     font-family: Rockwell;
-    font-size: 420%;;
-    top: -40%;
-    left: 62.5%;
+    font-size: 50pt;
+    top: -50%;
+    right: 6.5%;
     animation-name: topAnim;
     animation-delay: 2s;
     animation-duration: 1s;
@@ -76,14 +76,11 @@
     animation-fill-mode: forwards;
 }
 .website {
-    display: block;
     position: absolute;
-    white-space: nowrap;
-    z-index: 1;
     font-family: Rockwell;
-    font-size: 600%;
-    top: 90%;
-    left: 67%;
+    font-size: 50pt;
+    top: 150%;
+    right: 15%;
     animation-name: bottomAnim;
     animation-delay: 3s;
     animation-duration: 1s;
@@ -91,19 +88,20 @@
     animation-fill-mode: forwards;
 }
 @keyframes topAnim {
-    0% {top: -10%}
+    0% {top: -50%}
     100% {top: 10%}
 }
 @keyframes bottomAnim {
-    0% {top: 90%;}
+    0% {top: 150%;}
+    100% {top: 20%;}
+}
+@keyframes bottomAnimTablet {
+    0% {top: 150%;}
     100% {top: 15%;}
 }
-.intro-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: #3B7080;
-    padding-top: 30px;
+@keyframes bottomAnimMobile {
+    0% {top: 150%;}
+    100% {top: 10%;}
 }
 .about-bar {
     display: flex;
@@ -193,7 +191,6 @@
     100% {padding: 35px; border-radius: 0ch;}
 }
 .swimming-fish {
-    position: relative;
     float:left;
     height: 100px;
     width: 175px;
@@ -204,8 +201,8 @@
 }
 @keyframes swimming {
     0% {transform: translateX(0vw);}
-    49% {transform: translateX(89vw);}
-    51% {transform: translateX(89vw) scaleX(-1);}
+    49% {transform: translateX(90vw);}
+    51% {transform: translateX(90vw) scaleX(-1);}
     97% {transform: translateX(0vw) scaleX(-1);}
     100% {transform: translateX(0vw) scaleX(1);}
 }
