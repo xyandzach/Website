@@ -1,3 +1,17 @@
+function checkResize(body) {
+    var timelineTics = document.getElementsByClassName("timeline-spacer-block");
+
+    if (body.clientWidth < 1903) {
+        for (var i=0;i<timelineTics.length;i++) {
+            timelineTics[i].style.display = "none";
+        }
+    } else {
+        for (var i=0;i<timelineTics.length;i++) {
+            timelineTics[i].style.display = "block";
+        }
+    }
+}
+
 function showTileOverlay(ev) {
     var index = ev.id;
     var width = ev.offsetWidth;
@@ -26,7 +40,6 @@ function showTileOverlay(ev) {
     }
 }
 
-
 function showTimelinePopup(ev, img) {
     var popup = document.getElementById("timelinePopup");
     var title = document.getElementById("popupTitle");
@@ -50,13 +63,10 @@ function showTimelinePopup(ev, img) {
     popup.style.display = "block";
 }
 
-
 function removeTimelinePopup() {
     var popup = document.getElementById("timelinePopup");
     popup.style.display = "none";
 }
 
-
 window.onload = function() {
-
 }
