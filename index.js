@@ -1,13 +1,36 @@
 function checkResize(body) {
     var timelineTics = document.getElementsByClassName("timeline-spacer-block");
+    var greeting = document.getElementById("greeting").getElementsByTagName("h1");
 
-    if (body.clientWidth < 1903) {
+
+    if (body.clientWidth <= 1903 && body.clientWidth >= 981) {
+        for (var i=0;i<=greeting.length;i++) {
+            greeting[i].style.fontSize = "50pt";
+        }
+    } else if (body.clientWidth <= 980 && body.clientWidth >= 413) {
+        greeting[2].style.animationName = "bottomAnimTablet";
+        greeting[4].style.animationName = "bottomAnimTablet";
+        for (var i=0;i<=greeting.length;i++) {
+            greeting[i].style.fontSize = "25pt";
+        }
+    } else if (body.clientWidth <= 412 && body.clientWidth >= 0){
+        greeting[2].style.animationName = "bottomAnimMobile";
+        greeting[4].style.animationName = "bottomAnimMobile";
+        for (var i=0;i<=greeting.length;i++) {
+            greeting[i].style.fontSize = "12.5pt";
+        }
+        
+    }
+
+
+
+    if (body.clientWidth >= 1903) {
         for (var i=0;i<timelineTics.length;i++) {
-            timelineTics[i].style.display = "none";
+            timelineTics[i].style.display = "block";
         }
     } else {
         for (var i=0;i<timelineTics.length;i++) {
-            timelineTics[i].style.display = "block";
+            timelineTics[i].style.display = "none";
         }
     }
 }
@@ -68,5 +91,6 @@ function removeTimelinePopup() {
     popup.style.display = "none";
 }
 
-window.onload = function() {
-}
+window.addEventListener('load', function () {
+    checkResize(this.document.getElementById("body"));
+})
