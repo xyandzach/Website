@@ -232,82 +232,48 @@
     font-size: 15pt;
     padding: 20px;
 }
-.timeline {
+.console-timeline{
+    text-align: center;
+    background-color: #3B7080;
+    font-family: Rockwell;
+    font-size: 100pt;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+.timeline-line {
+    width: 2%;
     background-color: #D8E2DC;
 }
-.timeline-top {
+.timeline-entry {
     display: flex;
     flex-direction: row;
-    height: 350px;
+}
+.left-side-timeline {
+    width: 49%;
     background-color: #3B7080;
+    padding: 100px;
+}
+.description-image {
+    width: 39%;
+    padding-left: 10%;
 }
 .timeline-line {
     display: flex;
     flex-direction: row;
     height: 60px;
 }
-.timeline-shaper-block {
+.right-side-description {
+    width: 49%;
+    background-color: #3B7080;
+    padding: 100px;
+}
+.description-entry {
     display: flex;
     flex-direction: column;
-    height: 60px;
-}
-.shaper-block-topbottom {
-    height: 30px;
-    background-color: #3B7080;
-}
-.shaper-block-middle {
-    height: 10px;
-    background-color: #D8E2DC;
-}
-.timeline-spacer-block {
-    height: 25px;
-    background-color: #3B7080;
-    width: 10px;
-}
-.timeline-entry {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
-    max-width: 300px;
-    padding-top: 10%;
-    padding: 0.6%;
-}
-.timeline-text {
     font-family: Rockwell;
-    color: #070707;
+    border: 4px dashed #D8E2DC;
+    top: 100px;
     text-align: center;
-}
-.timeline-img {
-    height: 60%;
-    width: 65%;
-}
-.timeline-bottom {
-    display: flex;
-    flex-direction: row;
-    height: 350px;
-    background-color: #3B7080;
-}
-.timeline-popup {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    height: auto;
-    width: 350px;
-    background-color: #D8E2DC;
-    border-top-right-radius: 1ch;
-    border-bottom-left-radius: 1ch;
-    border-bottom-right-radius: 1ch;
-    border: #070707 1px dashed;
-}
-.timeline-popup-title{
-    color: #070707;
-    text-align: center;
-    text-decoration: underline;
-}
-.timeline-popup-description {
-    padding: 15px;
-    color: #070707;
 }
 .footer {
     display: flex;
