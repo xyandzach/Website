@@ -68,7 +68,7 @@
     font-family: Rockwell;
     font-size: 50pt;
     top: -50%;
-    right: 9%;
+    right: 6.5%;
     animation-name: topAnim;
     animation-delay: 2s;
     animation-duration: 1s;
@@ -80,7 +80,7 @@
     font-family: Rockwell;
     font-size: 50pt;
     top: 150%;
-    right: 20%;
+    right: 15%;
     animation-name: bottomAnim;
     animation-delay: 3s;
     animation-duration: 1s;
