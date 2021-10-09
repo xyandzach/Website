@@ -177,19 +177,19 @@
     margin-right: auto;
     padding: 35px;
 }
-/* .project-image:hover {
+.project-image:hover {
     animation-name: paddingPulse;
     animation-iteration-count: infinite;
     animation-duration: 2s;
     animation-timing-function: linear;
-} */
-/* @keyframes paddingPulse {
+}
+@keyframes paddingPulse {
     0% {padding: 35px; border-radius: 0ch;}
     25% {padding: 30px; border-radius: 1ch;}
     50% {padding: 35px; border-radius: 0ch;}
     75% {padding: 30px; border-radius: 1ch;}
     100% {padding: 35px; border-radius: 0ch;}
-} */
+} 
 .swimming-fish {
     float:left;
     height: 100px;
