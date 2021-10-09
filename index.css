@@ -95,13 +95,9 @@
     0% {top: 150%;}
     100% {top: 20%;}
 }
-@keyframes bottomAnimTablet {
+@keyframes bottomAnimSmall {
     0% {top: 150%;}
-    100% {top: 15%;}
-}
-@keyframes bottomAnimMobile {
-    0% {top: 150%;}
-    100% {top: 10%;}
+    100% {top: 13%;}
 }
 .about-bar {
     display: flex;
