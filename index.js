@@ -6,7 +6,7 @@ function setGreeting(body) {
         greeting[2].style.animationName = "bottomAnimTablet";
         greeting[4].style.animationName = "bottomAnimTablet";
         for (var i=0;i<=greeting.length;i++) {
-            greeting[i].style.fontSize = "15pt";
+            greeting[i].style.fontSize = "23pt";
         }
         for (var i=0;i<=projectImgs.length;i++) {
             projectImgs[i].style.width = "110%";
