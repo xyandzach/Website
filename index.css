@@ -177,19 +177,19 @@
     margin-right: auto;
     padding: 35px;
 }
-.project-image:hover {
+/* .project-image:hover {
     animation-name: paddingPulse;
     animation-iteration-count: infinite;
     animation-duration: 2s;
     animation-timing-function: linear;
-}
-@keyframes paddingPulse {
+} */
+/* @keyframes paddingPulse {
     0% {padding: 35px; border-radius: 0ch;}
     25% {padding: 30px; border-radius: 1ch;}
     50% {padding: 35px; border-radius: 0ch;}
     75% {padding: 30px; border-radius: 1ch;}
     100% {padding: 35px; border-radius: 0ch;}
-}
+} */
 .swimming-fish {
     float:left;
     height: 100px;
@@ -201,8 +201,8 @@
 }
 @keyframes swimming {
     0% {transform: translateX(0vw);}
-    49% {transform: translateX(90vw);}
-    51% {transform: translateX(90vw) scaleX(-1);}
+    49% {transform: translateX(91vw);}
+    51% {transform: translateX(91vw) scaleX(-1);}
     97% {transform: translateX(0vw) scaleX(-1);}
     100% {transform: translateX(0vw) scaleX(1);}
 }
@@ -216,9 +216,9 @@
     height: 200px;
     width: 300px;
     padding: 100px;
-    animation-duration: 1s;
+    /* animation-duration: 1s;
     animation-name: fishdance;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
 }
 @keyframes fishdance {
     0% {transform: rotate(-5deg);}
@@ -254,7 +254,7 @@
     padding: 100px;
 }
 .description-image {
-    width: 39%;
+    width: 69%;
     padding-left: 10%;
 }
 .timeline-line {
