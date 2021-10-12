@@ -117,6 +117,14 @@
     text-align: center;
     border: 4px dashed #3B7080;
     padding: 6px;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 .tile-overlay {
     position: absolute;
@@ -201,8 +209,8 @@
 }
 @keyframes swimming {
     0% {transform: translateX(0vw);}
-    49% {transform: translateX(89vw);}
-    51% {transform: translateX(89vw) scaleX(-1);}
+    49% {transform: translateX(85vw);}
+    51% {transform: translateX(85vw) scaleX(-1);}
     97% {transform: translateX(0vw) scaleX(-1);}
     100% {transform: translateX(0vw) scaleX(1);}
 }
