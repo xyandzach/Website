@@ -199,16 +199,21 @@
     100% {padding: 35px; border-radius: 0ch;}
 } 
 .swimming-fish {
-    float:left;
     height: 100px;
     width: 175px;
+    animation-name: swimming;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    animation-timing-function: linear;
 }
 @keyframes swimming {
     0% {transform: translateX(0vw);}
-    49% {transform: translateX(85vw);}
-    51% {transform: translateX(85vw) scaleX(-1);}
-    97% {transform: translateX(0vw) scaleX(-1);}
-    100% {transform: translateX(0vw) scaleX(1);}
+    26% {transform: translateX(39vw);}
+    27% {transform: translateX(40vw) scaleX(-1);}
+    74% {transform: translateX(-39vw) scaleX(-1);}
+    75% {transform: translateX(-40vw) scaleX(1);}
+    99% {transform: translateX(-1vw);}
+    100% {transform: translateX(0vw);}
 }
 .fish-row {
     display: flex;
