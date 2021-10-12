@@ -202,7 +202,6 @@
     float:left;
     height: 100px;
     width: 175px;
-    animation-name: swimming;
     animation-iteration-count: infinite;
     animation-duration: 6s;
     animation-timing-function: ease-in-out;
