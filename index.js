@@ -3,7 +3,10 @@ function setGreeting(body) {
     var projectImgs = document.getElementsByClassName("description-image");
 
     if (body.clientWidth <= 1000) {
+        greeting[0].style.animationName = "topAnimSmall";
+        greeting[1].style.animationName = "topAnimSmall";
         greeting[2].style.animationName = "bottomAnimSmall";
+        greeting[3].style.animationName = "topAnimSmall";
         greeting[4].style.animationName = "bottomAnimSmall";
         for (var i=0;i<=greeting.length;i++) {
             greeting[i].style.fontSize = "23pt";
