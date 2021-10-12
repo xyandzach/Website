@@ -197,8 +197,8 @@
 }
 @keyframes swimming {
     0% {transform: translateX(0vw);}
-    49% {transform: translateX(90vw);}
-    51% {transform: translateX(90vw) scaleX(-1);}
+    49% {transform: translateX(89vw);}
+    51% {transform: translateX(89vw) scaleX(-1);}
     97% {transform: translateX(0vw) scaleX(-1);}
     100% {transform: translateX(0vw) scaleX(1);}
 }
