@@ -91,13 +91,17 @@
     0% {top: -50%}
     100% {top: 10%}
 }
+@keyframes topAnimSmall {
+    0% {top: -50%}
+    100% {top: 5%}
+}
 @keyframes bottomAnim {
     0% {top: 150%;}
     100% {top: 20%;}
 }
 @keyframes bottomAnimSmall {
     0% {top: 150%;}
-    100% {top: 13%;}
+    100% {top: 8%;}
 }
 .about-bar {
     display: flex;
