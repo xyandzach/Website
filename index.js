@@ -1,8 +1,8 @@
-function setGreeting(body) {
+function adjustScreen() {
     var greeting = document.getElementById("greeting").getElementsByTagName("h1");
-    var projectImgs = document.getElementsByClassName("description-image");
 
-    if (body.clientWidth <= 1000) {
+    if (window.innerWidth == 980 || window.innerWidth == 1024) {
+        //mobile/tablet
         greeting[0].style.animationName = "topAnimSmall";
         greeting[1].style.animationName = "topAnimSmall";
         greeting[2].style.animationName = "bottomAnimSmall";
@@ -11,8 +11,29 @@ function setGreeting(body) {
         for (var i=0;i<=greeting.length;i++) {
             greeting[i].style.fontSize = "23pt";
         }
-        for (var i=0;i<=projectImgs.length;i++) {
-            projectImgs[i].style.width = "110%";
+    } else if (window.innerWidth == 1280 && window.innerHeight == 800) {
+        //macbook
+        var aboutBar = document.getElementById("aboutBar");
+        aboutBar.style.paddingTop = "42px";
+        aboutBar.style.paddingBottom = "42px";
+        for (var i=0;i<=greeting.length;i++) {
+            greeting[i].style.fontSize = "35pt";
+        }
+    } else if (window.innerWidth == 1280) {
+        //laptop w/ touch
+        var aboutBar = document.getElementById("aboutBar");
+        aboutBar.style.paddingTop = "77px";
+        aboutBar.style.paddingBottom = "77px";
+        for (var i=0;i<=greeting.length;i++) {
+            greeting[i].style.fontSize = "35pt";
+        }
+    } else if (window.innerWidth == 1440) {
+        //laptop
+        var aboutBar = document.getElementById("aboutBar");
+        aboutBar.style.paddingTop = "77px";
+        aboutBar.style.paddingBottom = "77px";
+        for (var i=0;i<=greeting.length;i++) {
+            greeting[i].style.fontSize = "35pt";
         }
     } 
 }
@@ -74,5 +95,5 @@ function removeTimelinePopup() {
 }
 
 window.onload = function() {
-    setGreeting(this.document.getElementById("body"));
+    adjustScreen();
 }
