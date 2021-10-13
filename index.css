@@ -108,8 +108,8 @@
     z-index: 2;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 110px;
+    padding-bottom: 110px;
 }
 .about-tile {
     display: flex;
