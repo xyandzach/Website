@@ -29,8 +29,6 @@ function perfChecks() {
         pageLinks[0].style.right = "70%";
         pageLinks[1].style.right = "25%";
         socialLinks.style.marginLeft = "28.5%";
-        footerNav.style.width = "17%";
-        footerImg.style.visibility = "hidden";
         emailButton[0].style.paddingRight = "10px";
         emailButton[0].style.paddingLeft = "10px";
         emailMessage[0].style.paddingRight = "125px";
