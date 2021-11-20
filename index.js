@@ -1,30 +1,5 @@
-function changeIcon(button) {
-    switch(button.id) {
-        case "codingButton":
-            if (document.getElementById("codingIcon").src.includes("rsc/codingiconorange.png")) {
-                document.getElementById("codingIcon").src = "rsc/codingicon.png";
-            } else {
-                document.getElementById("codingIcon").src = "rsc/codingiconorange.png";
-            }
-            break;
-        case "fishkeepingButton":
-            if (document.getElementById("fishkeepingIcon").src.includes("rsc/fishiconorange.png")) {
-                document.getElementById("fishkeepingIcon").src = "rsc/fishicon.png";
-            } else {
-                document.getElementById("fishkeepingIcon").src = "rsc/fishiconorange.png";
-            }
-            break;
-        case "gamingButton":
-            if (document.getElementById("gamingIcon").src.includes("rsc/gamingiconorange.png")) {
-                document.getElementById("gamingIcon").src = "rsc/gamingicon.png";
-            } else {
-                document.getElementById("gamingIcon").src = "rsc/gamingiconorange.png";
-            }
-            break;
-    }
-}
-
 function perfChecks() {
+    document.documentElement.style.scrollBehavior = "smooth";
     if (window.innerWidth == 980 || window.innerWidth == 1024) {
         //mobile/tablet
         var bgFish = document.getElementById("bgFish");
