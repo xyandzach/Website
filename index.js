@@ -68,12 +68,6 @@ function perfChecks() {
             welcomeLinks[t].style.fontSize = "175%";
         }
         headerLogo.style.paddingRight = "20%";
-    } else if (window.innerWidth == 1280 && window.innerHeight == 800) {
-        //macbook
-    } else if (window.innerWidth == 1280) {
-        //laptop w/ touch
-    } else if (window.innerWidth == 1440) {
-        //laptop
     } 
 }
 
