@@ -1,6 +1,10 @@
+function isMobile() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
 function perfChecks() {
     document.documentElement.style.scrollBehavior = "smooth";
-    if (window.innerWidth == 980 || window.innerWidth == 1024) {
+    if (isMobile()) {
         //mobile/tablet
         var bgFish = document.getElementById("bgFish");
         var downArrow = document.getElementById("downArrow");
