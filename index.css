@@ -1,0 +1,388 @@
+.header {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: right;
+    background-color: white;
+    border-radius: 1ch;
+    max-width: 80%;
+    padding: 1%;
+    left: 9%;
+}
+.header-links {
+    padding-top: 1.8%;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-decoration: none;
+    color: #4F6FAA;
+    font-family: Righteous;
+    font-weight: bold;
+    text-align: center;
+    width: 5%;
+    font-size: 15pt;
+    border-radius: 0.5ch;
+}
+.header-links:hover {
+    color: white;
+    font-weight: 900;
+    font-weight: normal;
+    background-color: #E5660F;
+}
+.welcome {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15%;
+}
+.welcome-left {
+    width: 45%;
+}
+.welcome-right {
+    display: flex;
+    width: 55%;
+    flex-direction: row;
+}
+.welcome-greeting-text {
+    padding-top: 4%;
+    color: #4F6FAA;
+    font-family: Righteous;
+    font-size: 600%;
+    font-weight: bold;
+    margin: 0;
+}
+.welcome-links {
+    color: #E5660F;
+    text-decoration: none;
+    font-family: Courier Prime;
+    font-size: 225%;
+    padding-left: 2%;
+    padding-right: 2%
+}
+.welcome-links:hover {
+    text-decoration:underline;
+}
+.down-arrow {
+    position: absolute;
+    height: 8%;
+    left:90%;
+    top:80%;
+    padding: 0.5%;
+    animation-name: bounce;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+.down-arrow:hover{
+    animation-name: none;
+    top: 83%;
+}
+.page-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #F3F3F3;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.page-link-tile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color:#4F6FAA;
+    text-align: center;
+    border-radius: 1ch;
+}
+.page-link-icon {
+    position: absolute;
+    width: 3%;
+    z-index: 1;
+    padding-top: 27px;
+    right: 68%;
+}
+.project-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2%;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 30%;
+    padding: 0%;
+    margin: 0%;
+}
+.project-title {
+    color: #4F6FAA;
+    font-family: Righteous;
+    font-size: 300%;
+    line-height: 1px;
+    margin-top: 10%;
+    padding-left: 5%;
+}
+.project-languages {
+    color: #E5660F;
+    font-family: Courier Prime;
+    font-size: 150%;
+    line-height: 1px;
+    padding-left: 5%;
+    margin-top: 1%;
+}
+.project-description {
+    font-family: Montserrat;
+    font-size: 120%;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 150px;
+    line-height: 130%;
+    padding-bottom: 15px;
+}
+.project-link {
+    display: flex;
+    background-color: white;
+    font-family: Righteous;
+    padding: 5%;
+    font-size: 150%;
+    animation-name: fadeOut;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+.project-link:hover {
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+.project-link-arrow {
+    padding-top: 1%;
+    left: 36%;
+    position: absolute;
+    transform: rotate(270deg);
+    height: 7%;
+}
+.swimming-fish {
+    height: 100px;
+    width: 175px;
+    padding: 10px;
+    animation-name: swimming;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+}
+.blogging {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F3F3F3;
+}
+.aquarium-blogging-title {
+    font-family: Courier Prime;
+    color: #E5660F;
+    text-align: center;
+    font-size: 50pt;
+}
+.aquarium-blogging-description{
+    display: flex;
+    width: 60%;
+    background-color: white;
+}
+.lets-fish-text {
+    font-size: 12pt;
+    margin: 22%;
+    font-weight:lighter;
+    font-family: Courier Prime;
+    border-radius: 0.5ch;
+    padding-top:17px;
+    padding-bottom: 15px;
+    width: 60%;
+    background-color: #E5660F;
+    text-align: center;
+    color: white;
+}
+.fish-row {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
+.fish-img {
+    margin-top: 100px;
+    padding-right: 90px;
+    float: right;
+    width: 50%;
+}
+.fish-description {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.fish-name {
+    color: #4F6FAA;
+    font-family: Montserrat;
+    font-size: 30pt;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 100px;
+}
+.fish-summary {
+    font-family: Montserrat;
+    font-size: 15pt;
+    line-height: 150%;
+}
+.timeline-button {
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0.5;
+    border: 5pt black dashed;
+    border-radius: 1ch;
+    font-size: 32pt;
+    color: black;
+    font-family: Courier Prime;
+    padding: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    line-height: 93%;
+}
+.game-blog{
+    width: 20%;
+    background-color: white;
+}
+.game-text {
+    font-family: Montserrat;
+    padding: 30px;
+    font-size: 17pt;
+    line-height: 200%;
+    margin-bottom: 0;
+}
+.game-on-button {
+    text-align: center;
+    background-color: #E5660F;
+    font-family: Courier Prime;
+    color: white;
+    border: 0.5ch;
+    font-size: 12pt;
+    padding: 20px;
+    margin: 30px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    border-radius: 0.5ch;
+    font-size: 15pt;
+}
+.email {
+    display: flex;
+    flex-direction: column;
+    background-color: #4F6FAA;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.email-text {
+    color: white;
+    font-family: Righteous;
+    font-size: 30pt;
+    padding-left: 25%;
+    line-height: 150%;
+    padding-right: 25%;
+}
+.email-form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+.email-input {
+    font-family: Courier Prime;
+    margin-left: 25%;
+    margin-right: 54.7%;
+    border-radius: 0.5ch;
+    font-size: 15pt;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+.email-message {
+    font-family: Courier Prime;
+    font-size: 15pt;
+    border-radius: 0.5ch;
+    padding-right: 350px;
+    padding-bottom: 50px;
+    margin-right: 100px;
+}
+.email-button {
+    background-color: #E5660F; /* Green */
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 0.5ch;
+    color: white;
+    font-family: Courier Prime;
+    padding-top: 2px;
+    font-size: 12pt;
+    margin-top: 71px;
+    cursor: pointer;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 300px;
+    background-color: #656565;
+}
+.social-links {
+    margin-left: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 10%;
+}
+.footer-header {
+    font-family: Courier Prime;
+    font-weight: bold;
+    font-weight: 15pt;
+    font-size: 20pt;
+    color: white;
+    margin-bottom: 0;
+}
+.footer-link {
+    max-height: 55px;
+    padding-top: 23px;
+}
+.footer-img {
+    width: 30%;
+    padding-top: 3%;
+    padding-left: 10%;
+}
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25%;
+    text-align: right;
+    align-items: right;
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 12pt;
+    padding-top: 20px;
+    font-family: Montserrat;
+    color: white;
+    font-weight: bold;
+}
+@keyframes fadeIn {
+    0% {background-color: rgba(229,102,15,0);}
+    100% {background-color: rgba(229,102,15,1);}
+}
+@keyframes fadeOut {
+    0% {background-color: rgba(229,102,15,1);}
+    100% {background-color: rgba(229,102,15,0);}
+}
+@keyframes swimming {
+    0% {transform: translateX(0vw);}
+    49% {transform: translateX(89vw);}
+    50% {transform: translateX(90vw) scaleX(-1);}
+    99% {transform: translateX(1vw) scaleX(-1);}
+    100% {transform: translateX(0vw);}
+}
+@keyframes bounce {
+    0% {top: 80%}
+    50% {top: 85%}
+    100% {top: 80%}
+}
