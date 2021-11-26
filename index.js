@@ -68,7 +68,19 @@ function perfChecks() {
             welcomeLinks[t].style.fontSize = "175%";
         }
         headerLogo.style.paddingRight = "20%";
-    } 
+    } else if (window.innerWidth <= 1440) {
+        var bgFish = document.getElementById("bgFish");
+        bgFish.style.display = "none";
+        var projectLanguages = document.getElementsByClassName("project-languages");
+        var projectTitles = document.getElementsByClassName("project-title");
+
+        for (var i = 0;i <projectTitles.length;i++) {
+            if (i <= 3) {
+                projectLanguages[i].style.fontSize = "100%";
+            }
+            projectTitles[i].style.fontSize = "250%";
+        }
+    }
 }
 
 window.onload = function() {
